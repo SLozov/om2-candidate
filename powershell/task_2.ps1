@@ -12,7 +12,7 @@ function Check-WindowsFeatureIfInstalled {
         [string]$FeatureName
     )
     
-    return ((Get-WindowsFeature $Feature).installstate -eq "Installed")
+    return ((Get-WindowsFeature $FeatureName).installstate -eq "Installed")
 
 }
 
